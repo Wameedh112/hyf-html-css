@@ -1,0 +1,153 @@
+body{
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.5;
+}
+h1{
+    text-align: center;
+}
+p{
+    text-align: justify;
+}
+
+a{
+    color:black;
+    text-decoration: none;
+}
+p a{
+    font-weight:bold;
+    font-style: italic;
+}
+footer{
+    height: 40px;
+    text-align: center;
+    padding-top:20px;
+    font-size: 12px;
+    background-color: #282C35;
+    color: white;
+    border-top: #666A73 solid 6px;
+}
+
+/* -WEBSITE BODY (container)- */
+
+/* Menu */
+#header{
+    width: 100%;
+    margin: 0 auto;
+    border-bottom: #666A73 solid 6px;
+ }
+#menu-bar{
+    height: 60px;
+    width: 100%;
+    background-color: #282C35;
+}
+
+/* classes of the list (ul) */
+.menu-all{
+    float: right;
+    padding-right: 20px;
+}
+.menu-item{
+    float: left;
+    font-size: 18px;
+    line-height: 10px;
+    padding: 18px;
+    list-style-type: none;
+}
+.menu-item a{
+    color: white;
+}
+.menu-item:hover{
+    background-color: #666A73;
+}
+#logo{
+    float: left;
+    line-height: 18px;
+    padding-left: 40px;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+/* IMAGE CONTAINER */
+#img-container{
+    height: 450px;
+    background: #253342 url(https://scontent-bru2-1.xx.fbcdn.net/v/t1.0-9/11230668_10204273980269770_867152898184328510_n.jpg?_nc_cat=0&_nc_eui2=AeELmHU6clxMCj2_P1sDPTxNK9lH3ksL1d7-dOVO7YfLd-A13LEpfK8X__PYEVKar_-F5xcl4UiJ73cwxXICppLnaTWduoaTYkMJa-knH6kE-Q&oh=f8bae1b8596796cb4dd753e029983a47&oe=5B8641AF) no-repeat center center;
+    margin-bottom: 40px;
+}
+
+
+/* The contents */
+.row{
+    height:100px;
+    width:800px;
+    margin:0 auto;
+    list-style-type: none;
+}
+/* Who am i */
+#who-am-i{
+    height:200px;
+    width:720px;
+    margin:0 auto;
+}
+
+/* WHAT-I-STUDIES */
+#WHAT-I-STUDIED{
+    height:260px;
+    width:720px;
+    margin:0 auto;
+}
+ 
+/* what-i-worked */
+#what-i-worked{
+    height:470px;
+    width:800px;
+    margin:0 auto;
+}
+
+
+/* W-C-I-H */
+#CERTIFICATE{
+    height:480px;
+    width:800px;
+    margin:0 auto;
+}
+
+#STRATEGIES-USED{
+    height:250px;
+    width:800px;
+    margin:0 auto;
+}
+#Helpful-resources{
+    height:340px;
+    width:800px;
+    margin:0 auto;
+}
+#Helpful-resources a:hover{
+  background-color: #eeeeee;
+}
+#hyf{
+    height:30px;
+    width:800px;
+    margin:0 auto;
+}
+#hyf img{
+    height: 20px;
+    width: 20px;
+    vertical-align: middle;
+    margin-right:10px;
+}
+.hyf-sm{
+    list-style-type: none;
+}
+.hyf-sm a:hover{
+    background-color: skyblue;
+}
+
+/* IMG CONTAINER */
+#img-bg{
+    margin-bottom: 40px;
+    margin-left:550px;
+    height: 150px;
+    background:  url(https://pbs.twimg.com/profile_images/984474625009741824/Bs_qKx6-_400x400.jpg) no-repeat center center ;
+/*   filter: opacity(40%); */
+}
+
