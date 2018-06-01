@@ -1,0 +1,170 @@
+/* Reset and body styling*/
+*, *::after{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    background-color: black;
+}
+body{
+    max-width: 90%;
+    margin: 0 auto;
+}
+ /* inside grid items */
+h1, h2, h3 {
+    color: 	rgb(255, 165, 0);
+    margin: 3px;
+}
+h1 {
+    margin: 10px 0;
+    font-size: 50px;
+    padding-left: 2%;
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+h1:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+    }
+}
+h2{
+    background: linear-gradient(to right, rgba(255,255,255,0.2), transparent);
+    padding: 4px 0 4px 2%;
+    animation-duration: 4s;
+    animation-name: slidein; 
+}
+@keyframes slidein {
+    from {
+        margin-left: 25%;
+    }
+
+}
+h3{
+    padding: 10px;
+}
+p{
+    padding: 20px 10px;
+}
+/* floats container */
+#grid-floats {
+    float: left;
+     clear: both;  
+}
+#grid-floats .grid-item {
+    height: 460px;
+    float: left;
+}
+ /* Flexbox container */
+#grid-flex{
+    padding: 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+#grid-flex li:nth-child(1){
+    max-width: 50%;
+}
+#grid-flex::after {
+    content: "Wameedh Ali";
+    border-top: 1px solid rgba(255, 165, 0, 0.5);
+    text-shadow: 0px 0px 40px rgb(255, 165, 0);
+    text-align: center;
+    padding: 1em 0;
+    width: 900vw;
+    color: rgb(255, 165, 0);
+}
+/* item container floats & Flex */
+.grid-item:nth-child(1) {
+    width: 50%;
+}
+.grid-item {
+    color: rgb(255, 255, 255);
+    border: 1px  solid rgb(255, 255, 255);
+    transform: scale(0.9);
+    transition: transform 400ms; 
+    float: left;
+    width: 25%;
+}
+.grid-item:hover{
+    box-shadow: 1px 1px 15px rgb(255, 255, 255);
+    transform: scale(1);
+    color:orange; 
+}
+.grid-item img{
+    width: 70%;
+    transform: translate(20%);
+    background-color: white;
+    border: 2px solid rgb(191, 191, 191);
+    border-radius: 5px;
+    box-shadow: 1px 2px 9px rgb(191, 191, 191);
+}
+@media only screen and (min-width: 1500px) {
+    .grid-item:nth-child(1) img {
+        width: 50%;
+    }
+}
+
+
+
+/* tablet view */
+@media only screen and (max-width:768px){
+    .grid-item:nth-child(2) {
+        width: 50%;
+    }
+    .grid-item:nth-child(n+3){
+       width: 33%; 
+    }
+}
+
+/* mobile view */
+@media only screen and (max-width: 480px) {
+    .grid-item:nth-child(1) {
+        width: 100%;
+    }
+    .grid-item:nth-child(n+2) {
+        width: 50%;
+        height: 36.5rem;
+    }
+}
+
+
+
+
+/* Links that helped me */
+
+/*
+-Flexbox
+    https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+    
+    https://www.youtube.com/watch?v=JJSoEo8JSnc
+
+-CSS border-style Property
+    https://www.w3schools.com/cssref/pr_border-style.asp
+    https://www.w3schools.com/cssref/playit.asp?filename=playcss_border-style
+
+-CSS animation Property
+    https://www.w3schools.com/cssref/css3_pr_animation.asp
+
+-CSS ::after Selector
+    https://www.w3schools.com/cssref/sel_after.asp
+
+-CSS color Property
+    https://www.w3schools.com/cssref/pr_text_color.asp
